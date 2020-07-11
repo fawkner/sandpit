@@ -8,6 +8,7 @@ public class SwitchCaseFallThrough{
             case "B":
                 System.out.println("After 2");
                 // If you dont put break; here, control will fall through down 
+                // At least using return statement will break out from here.
             case "C":
             case "D":
                 System.out.println("After 4");
