@@ -1,0 +1,27 @@
+//Example of switch-case fall through by omitting the break; statement.
+public class SwitchCaseFallThrough{
+     public static void main(String []args){
+        System.out.println("Example of switch-case fall through");
+        String caseValue = "A";
+        switch (caseValue) {
+            case "A":
+            case "B":
+                System.out.println("After 2");
+                // If you dont put break; here, control will fall through down 
+            case "C":
+            case "D":
+                System.out.println("After 4");
+                // Above 2 print statements + If you dont put break; here, control will fall through down
+            case "E":
+            case "F":
+            default:
+                System.out.println("default");
+                // Above 3 print statements, due to lack of break;
+        }
+     }
+}
+/* Output is 
+After 2
+After 4
+default
+*/
