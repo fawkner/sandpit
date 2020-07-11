@@ -1,0 +1,21 @@
+public class TurnOnOfFormatter {
+
+    /**
+     * The next piece of code is not formatted
+     * because of the @formatter annotations.
+     */
+    // @formatter:off
+    public void nonFormattedMethod() {
+        int sum = 1 + 2 + 3 + 4 + 5;
+    }
+    // @formatter:on
+
+    /**
+     * Without the @formatter annotations the
+     * same piece of code is formatted as below.
+     */
+    public void formattedMethod() {
+        int sum = 1 + 2 + 3
+                + 4 + 5;
+    }
+}
